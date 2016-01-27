@@ -1,13 +1,15 @@
 apply plugin: 'com.android.application'
 
+
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
 
     defaultConfig {
         applicationId "studio.uphie.one"
         minSdkVersion 15
-        targetSdkVersion 22
+        targetSdkVersion 23
         versionCode 1
         versionName "2016-1-8"
     }
@@ -17,7 +19,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    useLibrary 'org.apache.http.legacy'
 }
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -26,7 +30,7 @@ dependencies {
     compile 'com.loopj.android:android-async-http:1.4.5'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
-    compile 'com.facebook.fresco:fresco:0.7.0+'
+    compile 'com.facebook.fresco:fresco:0.7.0'
     //友盟统计
     compile 'com.umeng.analytics:analytics:latest.integration'
     //facebook
