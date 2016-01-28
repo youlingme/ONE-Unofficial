@@ -50,7 +50,7 @@ public class WelcomeActivity extends AbsBaseActivity {
                 finish();
             }
         });
-
+        //ds
         handler.sendEmptyMessageDelayed(0, 1000);
     }
 
