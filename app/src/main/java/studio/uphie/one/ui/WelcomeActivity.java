@@ -38,7 +38,7 @@ public class WelcomeActivity extends AbsBaseActivity {
 
     @Override
     public void init() {
-        DraweeController draweeController = Fresco.newDraweeControllerBuilder().setAutoPlayAnimations(true).setUri(Uri.parse("asset://studio.uphie.one/welcome.gif")).build();
+        DraweeController draweeController = Fresco.newDraweeControllerBuilder().setAutoPlayAnimations(true).setUri(Uri.parse("asset://studio.uphie.one/shizi.gif")).build();
         dvWelcome.setController(draweeController);
 
         textCountdown.setOnClickListener(new View.OnClickListener() {
